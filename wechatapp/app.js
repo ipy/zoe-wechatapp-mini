@@ -13,9 +13,9 @@ App({
     data: {
         version: '1.7.1',
         versionDate: '20181204',
-        siteURL: 'http://localhost/wordpress/',
-        name: 'WooCommerce微信小程序',
-        logo: '/images/woo-logo.png',
+        siteURL: 'https://zoe.chm9.com',
+        name: '啄一小店',
+        logo: '/images/zoe.jpg',
         apiPath: 'wp-json/w2w/v1/',
         apiList: {
             login: 'customers/login',
