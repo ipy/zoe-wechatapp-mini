@@ -198,9 +198,11 @@
 
                             <view class="attributes-wrapper">
                                 <block wx:for="{{attribute.options}}" wx:for-index="option_index" wx:for-item="option" wx:key="">
-                                    <label class="variation {{option.slug == product.default_attributes[attribute.slug].option ? 'checked' : ''}} {{option.is_available != false ? '' : 'disabled'}}" data-attriubte="{{attribute.slug}}" data-is-available="{{option.is_available != false ? true : false}}"
+                                    <label class="variation {{option.slug == product.default_attributes[attribute.slug].option ? 'checked' : ''}} {{option.is_available != false ? '' : 'disabled'}} {{option.description ? 'variation_has-image' : ''}}"
+                                        data-attriubte="{{attribute.slug}}" data-is-available="{{option.is_available != false ? true : false}}"
                                         data-old-option="{{product.default_attributes[attribute.slug].option}}" data-option="{{option.slug}}" bindtap="variationChange">
-                                        <text>{{option.name}}</text>
+                                        <image wx:if="{{ option.description }}" class="variation-image" src="{{option.description}}" mode="aspectFill"></image>
+                                        <text wx:if="{{ !option.description }}">{{option.name}}</text>
                                     </label>
                                 </block>
                             </view>

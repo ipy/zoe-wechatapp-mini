@@ -53,17 +53,17 @@
 <!-- W2W Extension, Name: w2w-advanced-coupon, Code: indexCoupons -->
 
     <!-- 精选产品开始 -->
-    <view class="center-title">
+    <view wx:if="{{ featured_products && featured_products.length }}" class="center-title">
         <text>精选产品</text>
     </view>
-    <template is="product-list" data="{{products: featured_products, currency: currency}}"></template>
+    <template wx:if="{{ featured_products && featured_products.length }}" is="product-list" data="{{products: featured_products, currency: currency}}"></template>
     <!-- 精选产品结束 -->
 
     <!-- 最新产品开始 -->
-    <view class="center-title">
+    <view wx:if="{{ lastest_products && lastest_products.length }}" class="center-title">
         <text>最新产品</text>
     </view>
-    <template is="product-list" data="{{products: lastest_products, currency: currency}}"></template>
+    <template wx:if="{{ lastest_products && lastest_products.length }}" is="product-list" data="{{products: lastest_products, currency: currency}}"></template>
     <button class="view-all" bindtap="goViewAll">
         <text>查看所有产品</text>
     </button>
