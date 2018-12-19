@@ -24,7 +24,7 @@ page {
     justify-content: center;
     color: #fff;
     font-size: 18px;
-    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#112e40), to(#bc7eaf));
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#112e40), to(#1c4b68));
 }
 
 /* 银行账户详情 */

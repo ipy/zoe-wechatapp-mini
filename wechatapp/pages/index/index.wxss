@@ -37,7 +37,7 @@ page {
     align-items: center;
     width: 100%;
     padding: 7px 5px;
-    border: 1px solid #112e40;
+    border: 1px solid #1c4b68;
     border-radius: 3px;
 }
 
@@ -47,7 +47,7 @@ page {
 
 .search-label {
     line-height: 1;
-    color: #b184a8;
+    color: #1c4b68;
 }
 
 .search-input-wrapper image {
