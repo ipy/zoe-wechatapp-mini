@@ -14,7 +14,7 @@ Page(Object.assign({}, app.Methods, {
         NAV_HEIGHT: wx.STATUS_BAR_HEIGHT + wx.DEFAULT_HEADER_HEIGHT + 'px',
         NAV_BAR_HEIGHT: wx.DEFAULT_HEADER_HEIGHT + 'px',
         pageTitle: '分类',
-        style: 'mi',
+        style: 'default',
         categories: null,
         tabSelectedID: 0
     }),

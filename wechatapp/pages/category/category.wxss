@@ -128,8 +128,8 @@
 }
 
 .mi .tab .tab-item .tab-title.selected {
-    color: #96588a;
-    border-left: 3px solid #96588a;
+    color: #112e40;
+    border-left: 3px solid #112e40;
 }
 
 .mi .categories {

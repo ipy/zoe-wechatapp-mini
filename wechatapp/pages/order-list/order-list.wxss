@@ -65,7 +65,7 @@ page {
 }
 
 .order .order-header .order-status {
-    color: #96588a;
+    color: #112e40;
 }
 
 .order .order-price {
@@ -129,7 +129,7 @@ page {
 }
 
 .cart-item .cart-detail .product-title {
-    color: #96588a;
+    color: #112e40;
     word-break: break-all;
     font-size: 12px;
 }
@@ -191,7 +191,7 @@ page {
 }
 
 .actions-button button.btn-main {
-    border-color: #96588a;
+    border-color: #112e40;
     background-color: #fff;
 }
 

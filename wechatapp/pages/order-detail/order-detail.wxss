@@ -24,7 +24,7 @@ page {
     justify-content: center;
     color: #fff;
     font-size: 18px;
-    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#96588a), to(#bc7eaf));
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#112e40), to(#bc7eaf));
 }
 
 /* 银行账户详情 */
@@ -124,7 +124,7 @@ page {
 }
 
 .order-shipping .shipping-detail {
-    color: #96588a;
+    color: #112e40;
 }
 
 .order-shipping .time {
@@ -285,7 +285,7 @@ page {
 }
 
 .cart-item .cart-detail .product-title {
-    color: #96588a;
+    color: #112e40;
     word-break: break-all;
     font-size: 12px;
 }
@@ -325,7 +325,7 @@ page {
 .order-refunds .detail-row .detail-value {
     display: flex;
     justify-content: space-between;
-    color: #96588a;
+    color: #112e40;
     font-size: 12px;
 }
 
@@ -367,7 +367,7 @@ page {
 
 .order-total .price {
     display: flex;
-    color: #96588a;
+    color: #112e40;
     font-size: 16px;
 }
 

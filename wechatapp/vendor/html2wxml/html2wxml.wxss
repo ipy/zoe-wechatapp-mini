@@ -420,7 +420,7 @@
 
 .wxml-product .wxml-product-price {
     line-height: 1;
-    color: #96588a;
+    color: #112e40;
     font-size: 40rpx;
     overflow: hidden;
     margin-right: 8px;

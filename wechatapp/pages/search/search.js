@@ -108,7 +108,7 @@ Page(Object.assign({}, app.Methods, {
             title: '',
             content: '确认清空搜索历史？',
             cancelColor: '#444',
-            confirmColor: '#96588a',
+            confirmColor: '#112e40',
             success: res => {
                 if (res.confirm) {
                     this.deleteAllKeywordHistory();

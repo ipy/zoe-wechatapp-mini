@@ -89,7 +89,7 @@ page {
 
 .product-detail .info-block .product-price,
 .product-detail .popup-wrapper .product-price {
-    color: #96588a;
+    color: #112e40;
     font-size: 22px;
     display: flex;
     align-items: flex-start;
@@ -326,8 +326,8 @@ page {
 }
 
 .attribute-group .variation.checked {
-    color: #96588a;
-    border-color: #96588a;
+    color: #112e40;
+    border-color: #112e40;
 }
 
 .attribute-group .variation.disabled {
@@ -484,7 +484,7 @@ page {
 }
 
 .poster-wrapper .actions .confirm {
-    color: #96588a;
+    color: #112e40;
 }
 
 .poster-wrapper .close {
@@ -531,7 +531,7 @@ page {
 }
 
 .product-onsale-to text {
-    color: #96588a;
+    color: #112e40;
     padding: 0 2px;
     line-height: 1;
     display: flex;
@@ -540,7 +540,7 @@ page {
 
 .product-onsale-to .countdown {
     color: #fff;
-    background-color: #96588a;
+    background-color: #112e40;
     padding: 2px 5px;
     border-radius: 4px;
 }

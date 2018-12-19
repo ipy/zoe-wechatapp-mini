@@ -15,8 +15,8 @@
 	],
 	"window": {
 		"backgroundTextStyle": "light",
-		"backgroundColor": "#96588a",
-		"navigationBarBackgroundColor": "#96588a",
+		"backgroundColor": "#112e40",
+		"navigationBarBackgroundColor": "#112e40",
 		"navigationBarTitleText": "WooCommerce微信小程序",
 		"navigationBarTextStyle": "white",
 		"navigationStyle": "custom",
@@ -25,7 +25,7 @@
 	},
 	"tabBar": {
 		"color": "#707070",
-		"selectedColor": "#96588a",
+		"selectedColor": "#112e40",
 		"borderStyle": "#707070",
 		"list": [
 			{

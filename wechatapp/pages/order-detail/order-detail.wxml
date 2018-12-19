@@ -10,7 +10,7 @@
 <import src="/templates/order-cart-list.wxml" />
 <import src="/templates/nav-bar.wxml" />
 
-<nav-bar custom-style="{{ {backgroundColor:'#96588a'} }}">
+<nav-bar custom-style="{{ {backgroundColor:'#112e40'} }}">
     <view slot="content" class="nav-bar-wrapper-wrap">
         <template is="nav-bar" data="{{pageTitle, navNarHeight: NAV_BAR_HEIGHT, backBtn: true}}"></template>
     </view>

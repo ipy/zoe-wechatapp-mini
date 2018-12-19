@@ -180,6 +180,8 @@ function getStateCode(provinceName) {
             return stateCode;
         }
     }
+    // TODO: 处理英文地址（note: shanxi）
+    return 'CN20';
 }
 
 // 省代码获取省名

@@ -483,7 +483,7 @@ Page(Object.assign({}, Zan.Stepper, Zan.Tab, Zan.TopTips, app.Methods, {
 
         //绘制价格
         context.setGlobalAlpha(1);
-        context.setFillStyle('#96588a');
+        context.setFillStyle('#112e40');
         context.setTextAlign('left');
         context.setFontSize(60);
 

@@ -9,7 +9,7 @@
 
 <import src="/templates/nav-bar.wxml" />
 
-<nav-bar custom-style="{{ {backgroundColor:'#96588a'} }}">
+<nav-bar custom-style="{{ {backgroundColor:'#112e40'} }}">
     <view slot="content" class="nav-bar-wrapper-wrap">
         <template is="nav-bar" data="{{pageTitle, navNarHeight: NAV_BAR_HEIGHT, backBtn: true}}"></template>
     </view>
@@ -30,7 +30,7 @@
     <block wx:else>
         <view class="default-content">
             <view class="logo">
-                <image src="/images/woo-logo.png"></image>
+                <image src="/images/zoe.jpg"></image>
                 <view class="version">
                     <text>WooCommerce+ {{version}}</text>
                 </view>
