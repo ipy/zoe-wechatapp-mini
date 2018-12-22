@@ -91,7 +91,7 @@
             <!-- 属性按钮结束 -->
 
             <!-- 销售说明按钮开始 -->
-            <button class="popup-btn" bindtap="openNoticePopup">
+            <button wx:if="{{ productNotice }}" class="popup-btn" bindtap="openNoticePopup">
                 <view class="button-main">销售说明</view>
                 <view class="go-popup">
                     <image src="/images/go_light.svg"></image>
@@ -211,7 +211,7 @@
                                         data-attriubte="{{attribute.slug}}" data-is-available="{{option.is_available != false ? true : false}}"
                                         data-old-option="{{product.default_attributes[attribute.slug].option}}" data-option="{{option.slug}}" bindtap="variationChange">
                                         <image wx:if="{{ option.description }}" class="variation-image" src="{{option.description}}" mode="aspectFill"></image>
-                                        <text wx:if="{{ !option.description }}">{{option.name}}</text>
+                                        <text class="{{ option.description ? 'variation-image-text' : '' }}">{{option.name}}</text>
                                     </label>
                                 </block>
                             </view>
@@ -285,18 +285,7 @@
 
             <view class="popup-wrapper">
                 <scroll-view scroll-y class="">
-                    <text style="font-size:12px;">
-销售说明 
-1. 由于家具是手工打造，所以需要5-8周的手工制作时间，请耐心等候。您可以进入“啄一”服务号点击在线客服，咨询您的家具制作情况。
-2. 家具为整装，整体运输，无需组装。因该家具尺寸较大，且衣帽杆较长，请在购买前确认能否上楼入户。
-3. 中国大陆地区（非港澳台）包邮，家具将免费配送入户，七楼以上无电梯用户除外，请在下单后提前联系“啄一”服务号在线客服。
-
-售后声明
-1. 色差：由于灯光、拍照、屏幕显示等因素影响，实物可能与照片存在些微的颜色差别，请以实物为准。
-2. 由于木材的天然性，使得构成它细胞的物质排列方向是随机的，这使得木材在不同方向上，随着外界条件的变化，如含水量、温度等的变化，会产生不同程度的收缩、发胀，进而有一定的可能导致开裂情况。轻微的开裂属实木家具的正常现象，并不影响正常使用。
-3. 您在收到货物七天内若发现质量问题，可联系“啄一”服务号在线客服，经确认后可为您安排退换货，退换货的费用由啄一承担。但若是由于非质量问题导致的退换货，啄一将计算、收取15%-20%的损耗费，并由用户承担相应的包装费与运费。
-4. 啄一家具产品自交货起，享有一年保修期。若您在使用过程中发现问题，可及时联系“啄一”服务号在线客服，描述您的问题。啄一将会及时安排接收家具和维修的时间。请您在包装时按照要求进行包装，以避免二次损坏。在一年保修期外，如需要维修或进行保养，可联系“啄一”服务号在线客服，啄一将收取相应的维修或保养费用。
-                    </text>
+                    <text style="font-size:12px;">{{productNotice}}</text>
                 </scroll-view>
             </view>
 
