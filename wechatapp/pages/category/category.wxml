@@ -20,6 +20,7 @@
 
     <!-- 默认样式布局开始 -->
     <block wx:if="{{style == 'default'}}">
+        <!--
         <view class="special-categories">
             <view class="featured" bindtap="goFeatureProducts">
                 <view class="category-image">
@@ -38,12 +39,13 @@
                 </view>
             </view>
         </view>
+        -->
 
         <view class="categories">
             <block wx:for="{{categories}}" wx:key="">
                 <view class="category" data-id="{{item.id}}" data-name="{{item.name}}" bindtap="goCategoryProducts">
                     <view class="category-image">
-                        <image src="{{item.image != '' ? item.image : '/images/placeholder.png'}}" mode="widthFix"></image>
+                        <image src="{{item.image != '' ? item.image : '/images/placeholder.png'}}" mode="aspectFill"></image>
                     </view>
                     <view class="category-detail">
                         <view class="category-name">

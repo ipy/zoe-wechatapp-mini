@@ -57,19 +57,25 @@ Page(Object.assign({}, Zan.Stepper, Zan.Tab, Zan.TopTips, app.Methods, {
             isAttributePopup: true
         });
     },
+    // 关闭产品属性弹窗
+    closeAttributePopup() {
+        this.setData({
+            isAttributePopup: false
+        });
+    },
     // 关闭产品选择弹窗
     closeVariationPopup() {
         this.setData({
             isVariationPopup: false
         });
     },
-    // 打开产品属性弹窗
+    // 打开购买说明弹窗
     openNoticePopup() {
         this.setData({
             isNoticePopup: true
         });
     },
-    // 关闭产品属性弹窗
+    // 关闭购买说明弹窗
     closeNoticePopup() {
         this.setData({
             isNoticePopup: false

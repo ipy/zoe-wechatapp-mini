@@ -90,6 +90,7 @@
 
 .wxml-p {
     margin-bottom: 8px;
+    color: #7f7f7f;
 }
 
 .wxml-h1 {
@@ -140,6 +141,10 @@
 }
 .wxml-h6 text {
     font-size: 28rpx;
+}
+
+.wxml-h1, .wxml-h2, .wxml-h3, .wxml-h4, .wxml-h5, .wxml-h6 {
+    color: black;
 }
 
 .wxml-h1, .wxml-h2, .wxml-h3, .wxml-h4, .wxml-h5, .wxml-h6, .wxml-b,
@@ -239,7 +244,7 @@
 }
 
 .wxml-img {
-    background-color: #efefef;
+    /* background-color: #efefef; */
     overflow: hidden;
     max-width: 100%;
 }

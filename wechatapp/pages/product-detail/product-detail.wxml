@@ -82,7 +82,7 @@
             <!-- 选择按钮结束 -->
 
             <!-- 属性按钮开始 -->
-            <button class="popup-btn" bindtap="openAttributePopup">
+            <button wx:if="{{product.type !== 'variable'}}" class="popup-btn" bindtap="openAttributePopup">
                 <view class="button-main">产品参数</view>
                 <view class="go-popup">
                     <image src="/images/go_light.svg"></image>
