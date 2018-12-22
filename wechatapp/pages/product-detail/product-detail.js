@@ -1,8 +1,8 @@
 // pages/product-detail/product-detail.js
 
 /**
- * Project: WooCommerce微信小程序
- * Description: 将WooCommerce商城接入微信小程序
+ * Project: 啄一小店·微信小程序
+ * Description: 啄一网店小程序端
  * Author: 幻想小籽
  * Organization: QwqOffice (https://www.qwqoffice.com)
  */
@@ -22,6 +22,7 @@ Page(Object.assign({}, Zan.Stepper, Zan.Tab, Zan.TopTips, app.Methods, {
         current: 0,
         isVariationPopup: false,
         isAttributePopup: false,
+        isNoticePopup: false,
         isSharePopup: false,
         isPosterPopup: false,
         quantity: 1,
@@ -56,10 +57,22 @@ Page(Object.assign({}, Zan.Stepper, Zan.Tab, Zan.TopTips, app.Methods, {
             isAttributePopup: true
         });
     },
-    // 关闭产品属性弹窗
-    closeAttributePopup() {
+    // 关闭产品选择弹窗
+    closeVariationPopup() {
         this.setData({
-            isAttributePopup: false
+            isVariationPopup: false
+        });
+    },
+    // 打开产品属性弹窗
+    openNoticePopup() {
+        this.setData({
+            isNoticePopup: true
+        });
+    },
+    // 关闭产品属性弹窗
+    closeNoticePopup() {
+        this.setData({
+            isNoticePopup: false
         });
     },
     // 打开产品分享弹窗
@@ -340,7 +353,7 @@ Page(Object.assign({}, Zan.Stepper, Zan.Tab, Zan.TopTips, app.Methods, {
             currentURL = e.currentTarget.dataset.src,
             images_urls = [];
         for (var i in product_images) {
-            images_urls.push(product_images[i].shop_single);
+            images_urls.push(product_images[i].src);
         }
         wx.previewImage({
             current: currentURL,

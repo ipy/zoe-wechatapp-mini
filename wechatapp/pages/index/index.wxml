@@ -1,8 +1,8 @@
 <!--pages/index/index.wxml-->
 
 <!--**
- * Project: WooCommerce微信小程序
- * Description: 将WooCommerce商城接入微信小程序
+ * Project: 啄一小店·微信小程序
+ * Description: 啄一网店小程序端
  * Author: 幻想小籽
  * Organization: QwqOffice (https://www.qwqoffice.com)
  */-->
@@ -30,12 +30,14 @@
     <!-- 站点公告结束 -->
 
     <!-- 搜索栏开始 -->
+    <!--
     <view class="search" bindtap="goSearch">
         <view class="search-input-wrapper">
             <view class="search-label">搜索</view>
             <image src="/images/search.svg"></image>
         </view>
     </view>
+    -->
     <!-- 搜索栏结束 -->
 
     <!-- Banner开始 -->

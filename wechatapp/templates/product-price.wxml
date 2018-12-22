@@ -1,8 +1,8 @@
 <!--templates/product-price.wxml-->
 
 <!--**
- * Project: WooCommerce微信小程序
- * Description: 将WooCommerce商城接入微信小程序
+ * Project: 啄一小店·微信小程序
+ * Description: 啄一网店小程序端
  * Author: 幻想小籽
  * Organization: QwqOffice (https://www.qwqoffice.com)
  */-->
@@ -22,9 +22,12 @@
                 <block wx:if="{{product.type == 'variable' && product.min_price != product.max_price}}">
                     <text class="currency">{{currency}}</text>
                     <text class="min-price">{{product.min_price}}</text>
-                    <text class="hyphen">-</text>
-                    <text class="currency">{{currency}}</text>
-                    <text class="max-price">{{product.max_price}}</text>
+                    <block wx:if="{{showMaxPrice}}">
+                        <text class="hyphen">-</text>
+                        <text class="currency">{{currency}}</text>
+                        <text class="max-price">{{product.max_price}}</text>
+                    </block>
+                    <text wx:else class="start-point">起</text>
                 </block>
                 <block wx:else>
                     <block wx:if="{{product.price != ''}}">
@@ -52,9 +55,12 @@
                         <block wx:if="{{product.min_regular_price != product.max_regular_price}}">
                             <text class="currency">{{currency}}</text>
                             <text class="min-regular-price">{{product.min_regular_price}}</text>
-                            <text class="hyphen">-</text>
-                            <text class="currency">{{currency}}</text>
-                            <text class="max-regular-price">{{product.max_regular_price}}</text>
+                            <block wx:if="{{showMaxPrice}}">
+                                <text class="hyphen">-</text>
+                                <text class="currency">{{currency}}</text>
+                                <text class="max-regular-price">{{product.max_regular_price}}</text>
+                            </block>
+                            <text wx:else class="start-point">起</text>
                         </block>
                         <block wx:else>
                             <text class="currency">{{currency}}</text>

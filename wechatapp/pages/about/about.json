@@ -1,5 +1,5 @@
 {
-	"navigationBarTitleText": "关于 WooCommerce微信小程序",
+	"navigationBarTitleText": "关于啄一",
 	"usingComponents": {
 		"htmltowxml": "/vendor/html2wxml/html2wxml",
 		"nav-bar": "/components/nav-bar/dist/index"

@@ -1,8 +1,8 @@
 // app.js
 
 /**
- * Project: WooCommerce微信小程序
- * Description: 将WooCommerce商城接入微信小程序
+ * Project: 啄一小店·微信小程序
+ * Description: 啄一网店小程序端
  * Author: 幻想小籽
  * Organization: QwqOffice (https://www.qwqoffice.com)
  */
@@ -11,10 +11,10 @@ var system = require('utils/system.js');
 
 App({
     data: {
-        version: '1.7.1',
-        versionDate: '20181204',
+        version: '0.0.1',
+        versionDate: '20181221',
         siteURL: 'https://zoe.chm9.com',
-        name: '啄一小店',
+        name: '啄 · 生活',
         logo: '/images/zoe.jpg',
         apiPath: 'wp-json/w2w/v1/',
         apiList: {

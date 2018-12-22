@@ -1,8 +1,8 @@
 <!--pages/about/about.wxml-->
 
 <!--**
- * Project: WooCommerce微信小程序
- * Description: 将WooCommerce商城接入微信小程序
+ * Project: 啄一小店·微信小程序
+ * Description: 啄一网店小程序端
  * Author: 幻想小籽
  * Organization: QwqOffice (https://www.qwqoffice.com)
  */-->
@@ -32,15 +32,15 @@
             <view class="logo">
                 <image src="/images/zoe.jpg"></image>
                 <view class="version">
-                    <text>WooCommerce+ {{version}}</text>
+                    <text>啄一小店 {{version}}</text>
                 </view>
             </view>
             <view class="intro">
-                <text>WooCommerce+ 是一个使用开源程序 WordPress 和 WooCommerce 作为后台的商城小程序。</text>
-                <text>这意味着你能以一个非常低的成本建立属于你自己的商城网站，并与小程序连接起来。</text>
+                <text>执“啄”，雕“啄”，“啄”越，“啄”生活，一群热爱生活的“讲究人”，一个自然独特传承的原创家具品牌。</text>
+                <text>这个小程序是啄一品牌的官方微信小店，可以在这里下单购买我们的产品，分享我们对生活的态度。</text>
             </view>
             <view class="copyright">
-                <text>Copyright © 2016-2018 QwqOffice</text>
+                <text>Copyright © 2018-2019 ZOE</text>
                 <text>All Rights Reserved.</text>
             </view>
         </view>
