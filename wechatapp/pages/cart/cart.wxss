@@ -99,7 +99,7 @@ page {
 }
 
 .cart-item .cart-detail .product-title {
-    color: #112e40;
+    color: #111111;
     word-break: break-all;
 }
 
@@ -190,7 +190,7 @@ page {
 }
 
 .checkout .total .cart-total .price {
-    color: #112e40;
+    color: #111111;
 }
 
 .checkout .checkout-btn {

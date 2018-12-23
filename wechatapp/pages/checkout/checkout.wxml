@@ -11,7 +11,7 @@
 <import src="/templates/product-selected-attributes.wxml" />
 <import src="/templates/nav-bar.wxml" />
 
-<nav-bar custom-style="{{ {backgroundColor:'#112e40'} }}">
+<nav-bar custom-style="{{ {backgroundColor:'#111111'} }}">
     <view slot="content" class="nav-bar-wrapper-wrap">
         <template is="nav-bar" data="{{pageTitle, navNarHeight: NAV_BAR_HEIGHT, backBtn: true}}"></template>
     </view>
@@ -147,7 +147,7 @@
                     </view>
                     <view class="checkbox">
                         <block wx:if="{{payment.chosen_method == item.id}}">
-                            <icon type="success" size="20" color="#112e40" />
+                            <icon type="success" size="20" color="#111111" />
                         </block>
                         <block wx:else>
                             <view class="not-selected"></view>

@@ -66,7 +66,7 @@ image, swiper {
     height: 47px;
     line-height: 47px;
     position: relative;
-    color: #112e40;
+    color: #111111;
     background-color: #fff;
     border-radius: 4px;
     text-align: center;
@@ -87,7 +87,7 @@ image, swiper {
     display: block;
     width: 450rpx;
     height: 1px;
-    background-color: #112e40;
+    background-color: #111111;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -122,12 +122,12 @@ image, swiper {
 
 .btn-primary {
     color: #fff;
-    background-color: #112e40;
+    background-color: #111111;
 }
 
 .btn-main {
-    color: #112e40;
-    border-color: #112e40;
+    color: #111111;
+    border-color: #111111;
 }
 
 .single-line {
@@ -185,7 +185,7 @@ button .cart-quantity {
     height: 20px;
     line-height: 20px;
     color: #fff !important;
-    background-color: #112e40;
+    background-color: #111111;
     border-radius: 10px;
     padding: 0 5px;
     white-space: nowrap;
@@ -328,7 +328,7 @@ button .cart-quantity {
 }
 
 .product .onsale {
-    background-color: #112e40;
+    background-color: #111111;
 }
 
 .product .outstock {
@@ -340,7 +340,7 @@ button .cart-quantity {
 }
 
 .product .product-title {
-    color: #112e40;
+    color: #111111;
     word-break: break-word;
 }
 
@@ -407,8 +407,8 @@ button .cart-quantity {
 }
 
 .zan-tab .zan-tab__item--selected .zan-tab__title {
-    color: #112e40;
-    border-bottom: 3px solid #112e40;
+    color: #111111;
+    border-bottom: 3px solid #111111;
 }
 
 .tab-content-wrapper {

@@ -217,7 +217,7 @@ page {
     height: 20px;
     line-height: 20px;
     color: #fff !important;
-    background-color: #112e40;
+    background-color: #111111;
     border-radius: 10px;
     padding: 0 5px;
     white-space: nowrap;

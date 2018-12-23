@@ -1,6 +1,7 @@
 {
 	"pages": [
 		"pages/index/index",
+		"pages/latest-products/index",
 		"pages/category/category",
 		"pages/cart/cart",
 		"pages/my/my",
@@ -15,8 +16,8 @@
 	],
 	"window": {
 		"backgroundTextStyle": "light",
-		"backgroundColor": "#112e40",
-		"navigationBarBackgroundColor": "#112e40",
+		"backgroundColor": "#111111",
+		"navigationBarBackgroundColor": "#111111",
 		"navigationBarTitleText": "啄 · 生活",
 		"navigationBarTextStyle": "white",
 		"navigationStyle": "custom",
@@ -25,7 +26,7 @@
 	},
 	"tabBar": {
 		"color": "#707070",
-		"selectedColor": "#112e40",
+		"selectedColor": "#111111",
 		"borderStyle": "#707070",
 		"list": [
 			{
@@ -38,7 +39,7 @@
 				"selectedIconPath": "images/category_fill.png",
 				"iconPath": "images/category.png",
 				"pagePath": "pages/category/category",
-				"text": "分类"
+				"text": "产品"
 			},
 			{
 				"selectedIconPath": "images/cart_fill_light.png",

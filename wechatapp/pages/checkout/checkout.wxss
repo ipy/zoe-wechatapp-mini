@@ -71,7 +71,7 @@ page {
 }
 
 .cart-item .cart-detail .product-title {
-    color: #112e40;
+    color: #111111;
     word-break: break-all;
     font-size: 26rpx;
 }
@@ -139,7 +139,7 @@ button.disabled {
 }
 
 .shipping-method .shipping-method-cost {
-    color: #112e40;
+    color: #111111;
 }
 
 .select-coupon .not-use {
@@ -147,7 +147,7 @@ button.disabled {
 }
 
 .select-coupon .coupon-count {
-    color: #112e40;
+    color: #111111;
     padding: 0 5px;
 }
 
@@ -286,7 +286,7 @@ button.disabled {
 .price-detail .detail-row .detail-value {
     display: flex;
     justify-content: space-between;
-    color: #112e40;
+    color: #111111;
     font-size: 12px;
 }
 
@@ -346,7 +346,7 @@ button.disabled {
 }
 
 .submit-order .total .cart-total .price {
-    color: #112e40;
+    color: #111111;
 }
 
 .submit-order .total .discount-total {

@@ -1,76 +1,54 @@
 <!--pages/index/index.wxml-->
+<view class="container">
 
-<!--**
- * Project: 啄一小店·微信小程序
- * Description: 啄一网店小程序端
- * Author: 幻想小籽
- * Organization: QwqOffice (https://www.qwqoffice.com)
- */-->
+<image mode="aspectFit"
+    style="height:180rpx; margin-top: 20rpx; margin-bottom: 20rpx;"
+    src="https://zoe-plus.com/wp-content/uploads/2018/11/微信图片_20181222151126.jpg"
+/>
 
-<import src="/vendor/ZanUI/toptips/index.wxml" />
-<import src="/vendor/ZanUI/noticebar/index.wxml" />
-<import src="/templates/product-list.wxml" />
-<import src="/templates/login-popup.wxml" />
-<import src="/templates/nav-bar.wxml" />
-
-<nav-bar custom-style="{{ {backgroundColor:'#112e40'} }}">
-    <view slot="content" class="nav-bar-wrapper-wrap">
-        <template is="nav-bar" data="{{pageTitle, navNarHeight: NAV_BAR_HEIGHT, backBtn: false}}"></template>
-    </view>
-    <view slot="placeholder" style="height:{{NAV_HEIGHT}}"></view>
-</nav-bar>
-
-<!--<video src="{{videUrl}}"></video>-->
-
-
-<view wx:if="{{banner != null}}" class="container home">
-
-    <!-- 站点公告开始 -->
-    <template wx:if="{{notice != null}}" is="zan-noticebar" data="{{ text: notice, componentId: 'noticebar', animationData:noticebar.animationData }}"></template>
-    <!-- 站点公告结束 -->
-
-    <!-- 搜索栏开始 -->
-    <!--
-    <view class="search" bindtap="goSearch">
-        <view class="search-input-wrapper">
-            <view class="search-label">搜索</view>
-            <image src="/images/search.svg"></image>
+<!-- 年轮系列 -->
+<navigator url="/pages/product-list/product-list?mode=category&id=34&name=%E5%B9%B4%E8%BD%AE%E7%B3%BB%E5%88%97">
+    <view class="flex-col" style="width: 644rpx; border-radius: 12rpx; overflow: hidden; background: #ececec; box-shadow: 0px 3px 10px 3px rgba(221,221,221,1);">
+        <image src="https://zoe-plus.com/wp-content/uploads/2018/12/234.jpg" />
+        <view class="flex-col flex-center" style="height: 160rpx; background: white; align-items: center;">
+            <text style="font-size: 24rpx; color: #999;">家具系列</text>
+            <text style="font-size: 36rpx; color: black; margin-top: 6rpx;">《年轮》全新上市</text>
         </view>
     </view>
-    -->
-    <!-- 搜索栏结束 -->
+</navigator>
 
-    <!-- Banner开始 -->
-    <swiper class="banner" indicator-dots="{{banner.length > 1 ? 'true' : false}}" circular="true" autoplay="true" interval="5000" duration="300" bindchange="imageChange" style="height:{{imgHeights[current]}}rpx;">
-        <block wx:for="{{banner}}" wx:key="">
-            <swiper-item data-url="{{item.url}}" bindtap="bannerTap">
-                <image src="{{item.image}}" class="slide-image" data-index="{{index}}" bindload="imageLoad" style="height:{{imgHeights[current]}}rpx;width:{{imgWidth}}rpx;" />
-            </swiper-item>
+<view style="height: 80rpx"></view>
+
+<!-- 小物件 -->
+<block wx:if="{gadgetProducts && gadgetProducts.length}">
+    <text style="font-size: 24rpx; color: #999;">new product</text>
+    <text style="font-size: 36rpx; color: black; margin-top: 10rpx;">精致 · 小物</text>
+
+    <swiper style="height: 500rpx;" current="1" current-item-id="{{currentItemId}}"
+        next-margin="140rpx" previous-margin="140rpx" bindchange="swiperChange"
+    >  
+        <block wx:for="{{gadgetProducts}}" wx:key="index">
+            <swiper-item item-id="{{index}}" data-item-id="{{index}}" bindtap="clickChange">  
+                <view class="li">
+                    <view class='li1 flex-col flex-center {{currentItemId == index ? "selected" : ""}}'
+                        data-id="{{item.id}}" data-name="{{item.name}}" data-type="{{item.type}}" data-in-stock="{{item.in_stock}}" bindtap="goProductDetail"
+                    >
+                        <image style="width: 312rpx; height: 230rpx; margin-top: 4rpx; border-radius: 20rpx; box-shadow: 0px 1px 6px 2px rgba(221,221,221,1);"
+                            mode="widthFit" class="product-image" src="{{item.images[0].shop_single}}"
+                        />
+                        <text style="font-size: 24rpx; margin-top: 10rpx;">{{item.name}}</text>
+                        <text style="font-size: 18rpx;">{{currency}} {{item.min_price}}</text>
+                        <view style="background: black; margin-top: 10rpx; padding: 0 30rpx; border-radius: 25rpx;"
+                            data-id="{{item.id}}" data-name="{{item.name}}" data-type="{{item.type}}" data-in-stock="{{item.in_stock}}" bindtap="addToCart"
+                        >
+                            <text style="font-size: 24rpx; line-height: 50rpx; color: white;">购买</text>
+                        </view>
+                    </view>
+                </view> 
+            </swiper-item>  
         </block>
     </swiper>
-    <!-- Banner结束 -->
+</block>
 
-    <!-- W2W Extension, Name: w2w-advanced-coupon, Code: indexCoupons -->
 
-<!-- W2W Extension, Name: w2w-advanced-coupon, Code: indexCoupons -->
-
-    <!-- 精选产品开始 -->
-    <view wx:if="{{ featured_products && featured_products.length }}" class="center-title">
-        <text>精选产品</text>
-    </view>
-    <template wx:if="{{ featured_products && featured_products.length }}" is="product-list" data="{{products: featured_products, currency: currency}}"></template>
-    <!-- 精选产品结束 -->
-
-    <!-- 最新产品开始 -->
-    <view wx:if="{{ lastest_products && lastest_products.length }}" class="center-title">
-        <text>最新产品</text>
-    </view>
-    <template wx:if="{{ lastest_products && lastest_products.length }}" is="product-list" data="{{products: lastest_products, currency: currency}}"></template>
-    <button class="view-all" bindtap="goViewAll">
-        <text>查看所有产品</text>
-    </button>
-    <!-- 最新产品结束 -->
-
-    <template is="login-popup" data="{{show: isLoginPopup, userInfo: userInfo}}"></template>
-    <template is="zan-toptips" data="{{ zanTopTips, top: NAV_HEIGHT }}"></template>
 </view>

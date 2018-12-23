@@ -65,7 +65,7 @@ page {
 }
 
 .edit-favor-btn.in-edit {
-    background-color: #112e40;
+    background-color: #111111;
 }
 
 .delete-favor-btn {
